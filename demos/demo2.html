@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.myelinSilder.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.banner').myelinSlider({
+                mode : 'fade',
+                direction : 'up',
+                auto : true,
+                speed : 3000
+            });
+        });
+    </script>
+
+    <style>
+        .banner {
+            overflow: hidden;
+            width: 700px;
+            height: 200px;
+            margin: 250px auto 0;
+            background: #FFF;
+            border: 1px solid #ccc;
+        }
+        .banner > ul{
+            list-style: none;
+            margin: 0; padding: 0;
+        }
+        .banner ul.m_banner_con {
+            float: right;
+            width: 80%; height: inherit;
+        }
+            .banner ul.m_banner_con img{
+                width: 100%;
+                height: 200px;
+            }
+        .banner ul.m_banner_txt {
+            float: left;
+            width: 20%; height: inherit;
+        }
+        .banner ul.m_banner_txt > li {
+            border-bottom: 1px solid #e3e5e6;
+            padding: 10px 10px 11px 10px;
+        }
+        .banner ul.m_banner_txt > li:last-child {
+            border-bottom: 0px;
+            padding-top: 11px;
+        }
+        .banner ul.m_banner_txt > li.on {
+            background-color: #d5d5d5;
+
+        }
+        .banner ul.m_banner_txt > li a {
+            text-decoration: none;
+        }
+    </style>
+
+    <title>Home</title>
+</head>
+
+<body>
+
+
+<div class="banner">
+    <ul class="m_banner_con">
+        <li><a href="#none" id="mb01"><img src="../img/sample_img01.jpg" alt="" /></a></li>
+        <li><a href="#none" id="mb02"><img src="../img/sample_img02.jpg" alt="" /></a></li>
+        <li><a href="#none" id="mb03"><img src="../img/sample_img03.jpg" alt="" /></a></li>
+        <li><a href="#none" id="mb04"><img src="../img/sample_img04.jpg" alt="" /></a></li>
+        <li><a href="#none" id="mb05"><img src="../img/sample_img05.jpg" alt="" /></a></li>
+    </ul>
+    <ul class="m_banner_txt">
+        <li><a href="#none" class="mb01">Image01</a></li>
+        <li><a href="#none" class="mb02">Image02</a></li>
+        <li><a href="#none" class="mb03">Image03</a></li>
+        <li><a href="#none" class="mb04">Image04</a></li>
+        <li><a href="#none" class="mb05">Image05</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>
