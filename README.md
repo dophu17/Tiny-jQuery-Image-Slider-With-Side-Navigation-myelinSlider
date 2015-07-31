@@ -61,6 +61,20 @@ $('.banner').myelinSlider({
 	speed : 3000
 	});
 </script>
+
+// if not run, using:
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="path/to/jquery.myelinSilder.js"></script>
+<script type="text/javascript">
+        $(window).load(function() {
+            $('.slide').myelinSlider({
+                mode : 'fade',
+                direction : 'up',
+                auto : true,
+                speed : 3000
+            });
+        });
+    </script>
 ```
 
 # Sample
